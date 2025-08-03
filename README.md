@@ -26,3 +26,10 @@ Recuerda escribir el puerto con el que has configurado la aplicación.
 
 ![Imagen 7](https://github.com/user-attachments/assets/5a7a565f-f0a9-40e4-b924-96fd45b554ec)
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/996583f8-8eba-4dcd-bad2-4379ec94563a" />
+
+### 5. Eliminar una cuenta mediante su id
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/82911110-6b69-475b-9853-636cfe4d6b5f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e16cfa05-737d-49ac-82ab-009440a7a6b7" />
+
+
