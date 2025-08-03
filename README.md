@@ -32,4 +32,9 @@ Recuerda escribir el puerto con el que has configurado la aplicación.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/82911110-6b69-475b-9853-636cfe4d6b5f" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e16cfa05-737d-49ac-82ab-009440a7a6b7" />
 
+## Pruebas desde postman 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7e4d087a-aa11-4ae2-9f6f-ff732d14954c" />
+
+
 
