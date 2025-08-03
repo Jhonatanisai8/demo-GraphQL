@@ -36,4 +36,13 @@ public class CuentaBancariaServiceImpl
         CuentaBancariaResponseDTO cuentaBancariaResponseDTO = cuentaBancariaMapper.fromCuentaBancaria(cuentaBancariaBBDD);
         return cuentaBancariaResponseDTO;
     }
+
+    @Override
+    public CuentaBancaria actualizarCuentaBancaria(CuentaBancaria cuentaBancariaBBDD, CuentaBancaria cuentaBancariaRequestDTO) {
+        cuentaBancariaBBDD.setBalance(cuentaBancariaRequestDTO.getBalance());
+        cuentaBancariaBBDD.setFechaCreacion(new Date());
+        cuentaBancariaBBDD.setTipoCuenta(cuentaBancariaRequestDTO.getTipoCuenta());
+        cuentaBancariaBBDD.setDivisa(cuentaBancariaRequestDTO.getDivisa());
+        return cuentaBancariaBBDD;
+    }
 }

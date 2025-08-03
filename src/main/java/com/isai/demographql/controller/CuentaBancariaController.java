@@ -6,10 +6,7 @@ import com.isai.demographql.models.CuentaBancaria;
 import com.isai.demographql.repository.CuentaBancariaRepository;
 import com.isai.demographql.services.CuentaBancariaService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -36,5 +33,13 @@ public class CuentaBancariaController {
     @RequestMapping(method = RequestMethod.POST, path = "/cuentas-bancarias")
     public CuentaBancariaResponseDTO guardarCuentaBancaria(@RequestBody CuentaBancariaRequestDTO cuentaBancariaRequestDTO) {
         return cuentaBancariaService.addCuentaBancaria(cuentaBancariaRequestDTO);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, path = "/cuentas-bancarias/{id}")
+    public CuentaBancaria actualizarCuentaBancaria(@PathVariable String id, CuentaBancaria cuentaBancariaRequestDTO) {
+        CuentaBancaria cuentaBancariaBBDD = cuentaBancariaRepository.findById(id)
+                .orElseThrow();
+        cuentaBancariaBBDD = cuentaBancariaService.actualizarCuentaBancaria(cuentaBancariaBBDD, cuentaBancariaRequestDTO);
+        return cuentaBancariaRepository.save(cuentaBancariaBBDD);
     }
 }
