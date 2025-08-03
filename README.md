@@ -13,3 +13,6 @@ Recuerda escribir el puerto con el que has condifugurado la aplicación.
 ### 1. Para obtener todas las Cuentas Bancarias
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/57f2a456-02c9-4ed6-9444-b40a017b1343" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4f732c40-758c-41ef-b264-158cde3d7c8e" />
+### 1. Para obtener una cuenta bancaria mediante su id
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/db138f5d-3dfb-4c39-9fd9-a0cb2a55d03a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/edf22cf3-9531-428f-bc81-0666e3daafd5" />
