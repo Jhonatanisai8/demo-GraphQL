@@ -1,0 +1,32 @@
+package com.isai.demographql.controller;
+
+import com.isai.demographql.models.CuentaBancaria;
+import com.isai.demographql.repository.CuentaBancariaRepository;
+import com.isai.demographql.services.CuentaBancariaService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(path = "/")
+@RequiredArgsConstructor
+public class CuentaBancariaController {
+
+    private final CuentaBancariaService cuentaBancariaService;
+
+    private final CuentaBancariaRepository cuentaBancariaRepository;
+
+    @RequestMapping(path = "/cuentas-bancarias", method = RequestMethod.GET)
+    public List<CuentaBancaria> listarCuentasBancarias() {
+        return cuentaBancariaRepository.findAll();
+    }
+
+    @RequestMapping(path = "/cuentas-bancarias/{id}")
+    public CuentaBancaria buscarCuentaBancaria(String id) {
+        return cuentaBancariaRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException(String.format("Cuenta %s no encontrada", id)));
+    }
+}
