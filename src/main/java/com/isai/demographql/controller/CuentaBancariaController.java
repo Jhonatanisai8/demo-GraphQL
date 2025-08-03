@@ -42,4 +42,9 @@ public class CuentaBancariaController {
         cuentaBancariaBBDD = cuentaBancariaService.actualizarCuentaBancaria(cuentaBancariaBBDD, cuentaBancariaRequestDTO);
         return cuentaBancariaRepository.save(cuentaBancariaBBDD);
     }
+
+    @RequestMapping(method = RequestMethod.DELETE, path = "/cuentas-bancarias/{id}")
+    public void eliminarCuentaBancaria(@PathVariable String id) {
+        cuentaBancariaRepository.deleteById(id);
+    }
 }
